@@ -10,6 +10,7 @@ import multiprocessing as mp
 
 
 exec_dir = os.path.dirname(__file__)
+log_file = "%s/exec.log" % exec_dir
 
 
 def process_and_wait(cmd, cwd):
