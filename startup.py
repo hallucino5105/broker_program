@@ -12,7 +12,6 @@ import multiprocessing as mp
 exec_dir = os.path.dirname(__file__)
 
 
-
 def process_and_wait(cmd, cwd):
     proc = subprocess.Popen(cmd, cwd=cwd, shell=True)
     proc.wait()
