@@ -44,7 +44,7 @@ def exec_detector():
 
 def main():
     processes = [
-        #mp.Process(target=exec_detector),
+        mp.Process(target=exec_detector),
         mp.Process(target=exec_picture_viewer_app),
         mp.Process(target=exec_picture_viewer_web),
     ]
