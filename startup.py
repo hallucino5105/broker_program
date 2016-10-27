@@ -22,24 +22,21 @@ def exec_picture_viewer_app():
     cwd = "%s/exec_broker/web" % exec_dir
     cmd = "./backend/app/app.py"
 
-    while True:
-        process_and_wait(cmd, cwd)
+    process_and_wait(cmd, cwd)
 
 
 def exec_picture_viewer_web():
     cwd = "%s/exec_broker/web" % exec_dir
     cmd = "grunt"
 
-    while True:
-        process_and_wait(cmd, cwd)
+    process_and_wait(cmd, cwd)
 
 
 def exec_detector():
     cwd = "%s/exec_broker" % exec_dir
     cmd = "./detector.sh '192.168.77.33' 1883"
 
-    while True:
-        process_and_wait(cmd, cwd)
+    process_and_wait(cmd, cwd)
 
 
 def main():
